@@ -1,0 +1,328 @@
+/*LOGIN*/
+
+.panel {
+	width: 100%;
+	max-width: 900px;
+	background: #fff;
+	border: 1px solid #ccc;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 15px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.panel .panel-title {
+	background: #f0f0f0;
+	width: 100%;
+	height: 23px;
+	margin: 0 0 15px 0;
+	padding: 10px 0 10px 0;
+}
+.panel .panel-title span {
+	font-size: 19px;
+	margin-left: 20px;
+}
+.panel .haft-left-panel {
+	width: 45%;
+	height: 23px;
+    font-size: 14px;
+    margin-bottom: 10px;
+	float: left;
+    text-align: right;
+    padding-top: 25px;
+	margin-right: 10px;
+}
+
+.panel .haft-right-panel {
+	width: 48%;
+	height: 40px;
+    font-size: 14px;
+	float: left;
+    text-align: left;
+    padding-top: 12px;
+    margin: 0px 10px 10px 0px; 
+}
+.panel .haft-right-panel input[type="radio"] {
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 0px 0px 10px 10px;
+}
+.panel .haft-right-panel label {
+	float: left;
+	margin: 0px 0px 10px 10px;
+}
+.panel .haft-right-panel input[type="text"] {
+	width: 100%;
+	float: left;
+}
+.panel #login-button {
+	width: 30%;
+	min-width: 100px;
+	margin-right: 5px;
+}
+.panel #login-checkbox {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin: 10px 5px 10px 5px;
+}
+.panel #login-checkbox-label {
+	float: left;
+	margin-top: 10px;
+}
+.panel .blank {
+	height: 0px;
+}
+.panel .small {
+	height: 25px;
+}
+.panel .last {
+	margin-bottom: 30px;
+	margin-top: 5px;
+}
+
+/*DO_LOGIN*/
+
+.div_ann_content {
+text-align: center;
+font-size: 16px;
+}
+
+/*CONTACT*/
+
+.panel .panel-p {
+	margin: 0px 20px 20px 20px;
+}
+.panel textarea {
+	width: 49%;
+	margin: 10px 10px 10px 0;
+}
+
+/*FORGOT_PASS*/
+form p.email-validate-checking, form p.username-validate-checking, form p.pass-validate-checking {
+	margin-top: 0px;
+	color: #d00;
+	font-size: 14px;
+}
+
+/*NEWS*/
+.main-content {
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	border-top: 1px solid #ccc;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 15px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.main-left {
+	width: auto;
+	max-width: 670px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+.sb-right {
+	width: 210px;
+	float: right;
+}
+.listitem {
+	width: 100%;
+	margin: 0px 0 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.listitem:last-child {
+	border-bottom: 0px;
+}
+.listitem .listitem-title {
+	width: 100%;
+	height: 23px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+	padding: 10px 0 10px 15px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.listitem .listitem-title a {
+	color: #444;
+}
+.listitem .listitem-title a:hover {
+	color: #007d50;
+}
+.listitem .listitem-content {
+	width: 100%;
+	padding: 0 10px 10px 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.listitem .thumbnail {
+	width: 200px;
+	height: 160px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.listitem .thumbnail img {
+	width: 100%;
+	height: 100%;
+}
+.listitem .info-right {
+	float: left;
+	width: auto;
+	max-width: 440px
+}
+
+.box-sb {
+	width: 245px;
+	margin-top: 10px;
+	border-left: 1px solid #ccc;
+}
+.box-sb .box-sb-title {
+	font-size: 15px;
+	height: 28px;
+	color: #007d50;
+	font-weight: bold;
+	padding: 10px 0 0 10px;
+	background: #f2f2f2;
+}
+.box-sb .box-sb-content {
+	margin-top: 10px;
+}
+.box-sb .box-sb-content li {
+	height: 38px;
+    margin: 0;
+    font-size: 15px;
+    text-align: left;
+    padding: 5px 0 0 15px;
+}
+.box-sb .box-sb-content li a {
+	color: #555;
+}
+.box-sb .box-sb-content li a:hover {
+	color: #007d50;
+}
+/*DETAIL_NEWS*/
+.detail-title {
+	width: 100%;
+	height: 15px;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 25px auto 0 auto;
+	padding: 0 10px 0 0px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.detail-date {
+	color: #aaa;
+	font-size: 14px;
+}
+.detail-summary {
+	text-indent: 25px;
+	font-size: 15px;
+	text-align: justify;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.detail-content {
+	text-indent: 25px;
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: justify;
+}
+.detail-related {
+	font-size: 15px;
+	margin-top: 20px;
+}
+.detail-related h3 {
+	width: 100%;
+	height: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	margin: 0px auto 0 auto;
+	padding: 0 10px 20px 0px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */	
+}
+.detail-related ul {
+	margin-top: 20px;
+}
+.detail-related li {
+	height: 25px;
+}
+
+
+
+/*---------------*/
+@media (max-width: 915px) {
+	/*NEWS*/
+	.main-left {
+		width: auto;
+		max-width: 495px;
+	}
+	.listitem .info-right {
+		width: auto;
+		max-width: 260px;
+	}
+}
+@media (max-width: 765px) {
+	/*NEWS*/
+	.sb-right {
+		display: none;
+	}
+	.main-left {
+		width: 100%;
+		max-width: 100%;
+	}
+	.listitem .info-right {
+		float: left;
+		width: auto;
+		max-width: 360px;
+	}
+}
+@media (max-width: 500px) {
+	/*LOGIN*/
+	.panel .haft-right-panel label {
+		font-size: 13px;
+	}
+	.panel .haft-right-panel input {
+		margin-top: 0;
+	}
+	.panel .haft-left-panel {
+		width: 97%;
+		margin: 0 0 10px 0;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.panel .haft-right-panel {
+		width: 97%;
+		margin: 0 auto 10px auto;
+	}
+	.panel .alone {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.panel .blank {
+		display: none;
+	}
+	/*CONTACT*/
+	.panel textarea {
+		width: 97%;
+		margin: 0px auto 10px auto;
+	}
+}
+

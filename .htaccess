@@ -1,0 +1,50 @@
+
+Options +FollowSymLinks
+<filesMatch "\.(html|htm|js|css)$">
+  FileETag None
+  <ifModule mod_headers.c>
+     Header unset ETag
+     Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+     Header set Pragma "no-cache"
+     Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+  </ifModule>
+</filesMatch>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^home\.html$ home.php [L]
+RewriteRule ^app\.html$ app.php [L]
+RewriteRule ^news\.html$ news.php [L]
+RewriteRule ^product\.html$ product.php [L]
+RewriteRule ^product-([0-9a-zA-Z-]+)\.html$ product.php?page=$1 [L]
+RewriteRule ^contact\.html$ contact.php [L]
+RewriteRule ^do_contact\.html$ do_contact.php [L]
+RewriteRule ^login\.html$ login.php [L]
+RewriteRule ^do_login\.html$ do_login.php [L]
+RewriteRule ^register\.html$ register.php [L]
+RewriteRule ^do_register\.html$ do_register.php [L]
+RewriteRule ^do_search\.html$ do_search.php [L]
+RewriteRule ^detail_app-([0-9a-zA-Z-]+)\.html$ detail_app.php?name=$1 [L]
+RewriteRule ^detail_technews-([0-9a-zA-Z-]+)\.html$ detail_news.php?name=$1 [L]
+RewriteRule ^detail_product-([0-9a-zA-Z-]+)\.html$ detail_product.php?name=$1 [L]
+
+RewriteRule ^minad/am-([0-9a-zA-Z]+)\.html$ minad/admin.php?page=$1 [L]
+RewriteRule ^minad/login\.html$ minad/login.php [L]
+RewriteRule ^minad/do_login\.html$ minad/do_login.php [L]
+RewriteRule ^minad/admin\.html$ minad/admin.php [L]
+RewriteRule ^minad/update_list_news-([0-9a-zA-Z-]+)\.html$ minad/update_list_news.php?sort=$1 [L]
+RewriteRule ^minad/update_list_news\.html$ minad/update_list_news.php [L]
+RewriteRule ^minad/update_list_product-([0-9a-zA-Z-]+)\.html$ minad/update_list_product.php?sort=$1 [L]
+RewriteRule ^minad/update_list_product\.html$ minad/update_list_product.php [L]
+RewriteRule ^minad/add-([0-9a-zA-Z]+)\.html$ minad/add.php?page=$1 [L]
+RewriteRule ^minad/do_add-([0-9a-zA-Z]+)\.html$ minad/do_add.php?page=$1 [L]
+RewriteRule ^minad/detail-([0-9a-zA-Z]+)-([0-9a-zA-Z_-]+)\.html$ minad/detail.php?page=$1&name=$2 [L]
+RewriteRule ^minad/del-([0-9a-zA-Z]+)-([0-9a-zA-Z_-]+)\.html$ minad/del.php?page=$1&name=$2 [L]
+RewriteRule ^minad/edit-([0-9a-zA-Z]+)-([0-9a-zA-Z_-]+)\.html$ minad/edit.php?page=$1&name=$2 [L]
+RewriteRule ^minad/do_edit-([0-9a-zA-Z]+)\.html$ minad/do_edit.php?page=$1 [L]
+RewriteRule ^minad/selectionc-([0-9]*)\.html$ minad/selection_category.php?areaID=$1 [L]
+RewriteRule ^minad/selectiont-([0-9]*)\.html$ minad/selection_type.php?categoryID=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) index.php
+</IfModule>
